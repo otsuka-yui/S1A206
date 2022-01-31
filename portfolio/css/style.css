@@ -41,10 +41,11 @@ li {
 
 .section {
   padding: 90px 0;
+  background-color: #212121;
 }
 
 .section:nth-of-type(odd) {
-  background-color: #f7f7f7;
+  background-color: #212121;
 }
 
 .inner {
@@ -63,7 +64,7 @@ li {
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: .05em;
-  color: #333;
+  color: #fff;
 }
 
 .lead {
@@ -140,16 +141,19 @@ li {
 /*--------------------------------
  メインビジュアル
 ---------------------------------*/
+
 .main-visual {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 85vh;
   text-align: center;
+  background-color: #212121;
 }
 
 .main-visual-inner {
-  padding: 0 40px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .main-visual-title {
@@ -172,6 +176,9 @@ li {
   max-width: 800px;
   margin: 0 auto;
 }
+.hoge {
+  max-width: 40%;
+}
 .main-visual-img {
   width: 20%;
   margin-right: 30px;
@@ -182,13 +189,14 @@ li {
 }
 .main-visual-text {
   flex: 1;
+  color: #fff;
 }
 .main-visual-text p:not(:last-child) {
   margin-bottom: 30px;
 }
 
 /*--------------------------------
- Works
+Works
 ---------------------------------*/
 .works-list {
   display: flex;
@@ -239,7 +247,7 @@ li {
   border: 2px solid #9ec34b;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  z-index: 0;
 }
 .btn-open:after{
   width: 100%;
@@ -282,7 +290,7 @@ li {
 
 .btn-box:hover {
   border: 2px solid transparent;
-  color: #000;
+  color: #fff;
 }
 
 .btn-box:before, .btn-box:after {
@@ -299,14 +307,14 @@ li {
 }
 
 .btn-box:before {
-  border-bottom: 2px solid #000;
-  border-left: 2px solid #000;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
   transform-origin: 100% 0%;
 }
 
 .btn-box:after {
-  border-top: 2px solid #000;
-  border-right: 2px solid #000;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
   transform-origin: 0% 100%;
 }
 
@@ -364,7 +372,13 @@ li {
 
 .skill-name {
   margin-bottom: 3px;
+  color: #fff;
 }
+
+.skill-text {
+  color: #fff;
+}
+
 
 /*--------------------------------
  About
@@ -507,6 +521,7 @@ li {
 
   .section {
     padding: 60px 0;
+    background-color: #212121;
   }
 
   .inner {
@@ -593,6 +608,12 @@ li {
 
   .skill-item:last-child {
     margin-bottom: 0;
+  }
+  .skill-name {
+    color: #fff;
+  }
+  .skill-text {
+    color: #fff;
   }
 
   /* About */
